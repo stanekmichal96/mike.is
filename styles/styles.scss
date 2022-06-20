@@ -1,0 +1,170 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+    scroll-behavior: smooth;
+}
+
+// nav {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100vw;
+//     height: 80px;
+//     padding: 10px 50px;
+//     box-sizing: border-box;
+//     background: rgba(0,0,0,0.6);
+//     border-bottom: 1px slid #fff;
+
+//     ul {
+//         list-style: none;
+//         display: flex;
+//         flex-wrap: nowrap;
+//         justify-content: space-around;
+//         align-items: center;
+//         padding: 0;
+
+//         li a {
+//             line-height: 30px;
+//             color: #fff;
+//             text-decoration: none;
+//             font-weight: bold;
+//             text-transform: uppercase;
+
+//             &:hover {
+//                 background: rgba(0,0,0,0.7);
+//                 border-radius: 6px;
+//             }
+//         }
+//     }
+// }
+
+.container {
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: #2a2a2a;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    margin: auto;
+    margin-bottom: 90px;
+}
+
+.begin {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .mike {
+        font-weight: bold;
+        font-size: 2.4rem;
+    }
+    .is {
+        color: darkblue;
+        font-weight: bold;
+        font-size: 2.4rem;
+    }
+}
+
+.description {
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.typing {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+
+    .txt-type {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: -5px;
+            width: 1px;
+            height: 100%;
+            border-right: 2px solid white;
+            animation: blink 0.6s infinite ease-in-out;
+        }
+    }
+}
+
+.skills {
+    
+    margin-bottom: 90px;
+}
+
+.portfolio {
+    
+    margin-bottom: 90px;
+}
+
+.contact {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0px;
+
+    p {
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+
+    .mail {
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    .media {
+        display: flex;
+        flex-direction: row;
+        font-size: 3.4rem;
+
+        a {
+            display: flex;
+            padding: 15px;
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}

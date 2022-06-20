@@ -73,21 +73,52 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  scroll-snap-align: start;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60vw;
+  margin: auto;
+  margin-bottom: 90px;
+}
+
+.begin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
 .about__mikeis .mike {
+.begin .mike {
   font-weight: bold;
   font-size: 2.4rem;
 }
 
 .about__mikeis .is {
+.begin .is {
   color: darkblue;
   font-weight: bold;
   font-size: 2.4rem;
@@ -121,11 +152,45 @@ section {
 }
 
 .about__typing .txt-type::after {
+.description {
+  font-size: 1.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.typing {
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+.typing .txt-type {
+  position: relative;
+}
+
+.typing .txt-type::after {
   content: "";
   position: absolute;
   right: -5px;
   width: 1px;
   height: 1.7rem;
+  height: 100%;
   border-right: 2px solid white;
   -webkit-animation: blink 0.6s infinite ease-in-out;
           animation: blink 0.6s infinite ease-in-out;
