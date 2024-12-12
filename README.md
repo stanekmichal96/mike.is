@@ -1,5 +1,4 @@
 # mike.is()
-
 https://stanekmichal96.github.io/mike.is/
 
 My personal page. Still in progress.
